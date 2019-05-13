@@ -1,4 +1,5 @@
 import React from "react";
+import List from './component/List';
 import "./App.css";
 
 const pokemon = [
@@ -17,26 +18,8 @@ const pokemon = [
 class App extends React.Component {
   render() {
     return (
-    <div className="App">
-    <h1>Pokemon</h1>
-    <ul>
-      {pokemon.map(item=>{
-        return(
-        <li>
-          <h2>{item.name}</h2>
-          <img src={item.url} alt="pokemon"></img>
-          <ul>
-          {item.types.map(type=>{
-            return (
-              <li>{type}</li>
-            )
-          }
-            )}
-            </ul>
-        </li>)
-      })}
-    </ul>
-    </div>
+      <List pokemon={pokemon} />
+    
     );
   }
 }
