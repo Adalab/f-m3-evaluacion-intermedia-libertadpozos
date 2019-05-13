@@ -19,7 +19,6 @@ class App extends React.Component {
   render() {
     return (
       <List pokemon={pokemon} />
-    
     );
   }
 }
