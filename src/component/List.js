@@ -6,12 +6,10 @@ render(){
     const {pokemon}=this.props;
     console.log(pokemon)
     return(
-    
-    <ul>
-         
+    <ul className="wrapper">
       {pokemon.map(item=>{
         return(
-        <li>
+        <li className="item__list">
           <Card item={item}/> 
         </li>)
       })}

@@ -5,12 +5,12 @@ class Card extends React.Component{
         const {item}=this.props;
         return(
           <React.Fragment>
-            <h2>{item.name}</h2>
-            <img src={item.url} alt="pokemon"></img>
-            <ul>
+            <h2 className="name" >{item.name}</h2>
+            <img className="photo" src={item.url} alt="pokemon"></img>
+            <ul className="type__list">
                 {item.types.map(type=>{
                     return (
-                        <li>{type}</li>
+                        <li className="type">{type}</li>
                     )
                 }
                 )}
