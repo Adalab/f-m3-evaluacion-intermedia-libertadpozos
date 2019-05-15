@@ -5,8 +5,7 @@ render(){
     const {pokemon}=this.props;
     console.log(pokemon)
     return(
-        <div className="App">
-    <h1>Pokemon</h1>
+    
     <ul>
       {pokemon.map(item=>{
         return(
@@ -24,7 +23,7 @@ render(){
         </li>)
       })}
     </ul>
-    </div>
+  
     );
 }
 
