@@ -25,6 +25,11 @@ li{
 }
 .item__list{
   background-color: #E8F3F1;
+ 
+}
+.selected-item{
+  background-color:#A0ACBD;
+  opacity: 0.5;
 }
 
 .name{
