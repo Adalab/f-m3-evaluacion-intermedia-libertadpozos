@@ -1,4 +1,5 @@
 import React from "react";
+import Card from './Card'
 
 class List extends React.Component{
 render(){
@@ -7,19 +8,11 @@ render(){
     return(
     
     <ul>
+         
       {pokemon.map(item=>{
         return(
         <li>
-          <h2>{item.name}</h2>
-          <img src={item.url} alt="pokemon"></img>
-          <ul>
-          {item.types.map(type=>{
-            return (
-              <li>{type}</li>
-            )
-          }
-            )}
-            </ul>
+          <Card item={item}/> 
         </li>)
       })}
     </ul>
