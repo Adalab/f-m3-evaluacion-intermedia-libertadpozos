@@ -35,9 +35,9 @@ class Card extends React.Component{
             <h2 className="name" >{item.name}</h2>
             <img className="photo" src={item.url} alt={item.name}></img>
             <ul className="type__list">
-                {item.types.map(type=>{
+                {item.types.map((type, index)=>{
                     return (
-                        <li className="type">{type}</li>
+                        <li  key={index} className="type">{type}</li>
                     )
                 }
                 )}

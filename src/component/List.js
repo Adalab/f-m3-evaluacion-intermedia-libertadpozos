@@ -10,7 +10,7 @@ render(){
     <ul className="wrapper">
       {pokemon.map(item=>{
         return(
-        <li >
+        <li key={item.id}>
           <Card item={item}/> 
         </li>)
       })}
