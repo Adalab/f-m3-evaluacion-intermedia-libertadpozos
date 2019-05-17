@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import "./List.css";
 
 class List extends React.Component {
+  
   render() {
     const { pokemon } = this.props;
     console.log(pokemon);
@@ -12,7 +13,7 @@ class List extends React.Component {
       <ul className="wrapper">
         {pokemon.map(item => {
           return (
-            <li key={item.id}>
+            <li key={item.id} >
               <Card item={item} />
             </li>
           );
