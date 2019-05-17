@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./Card";
+import PropTypes from 'prop-types';
 import "./List.css";
 
 class List extends React.Component {
@@ -20,5 +21,10 @@ class List extends React.Component {
     );
   }
 }
+
+List.propTypes = {
+  pokemon: PropTypes.array.isRequired,
+};
+
 
 export default List;

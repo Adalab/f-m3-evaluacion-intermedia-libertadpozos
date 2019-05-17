@@ -1,5 +1,6 @@
 import React from "react";
-import "./Card.css"
+import "./Card.css";
+import PropTypes from "prop-types";
 
 class Card extends React.Component {
   constructor() {
@@ -45,5 +46,9 @@ class Card extends React.Component {
     );
   }
 }
+
+Card.propTypes = {
+    item: PropTypes.object.isRequired,
+  };
 
 export default Card;
